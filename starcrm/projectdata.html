@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Property Plus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/loader-style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/js/datepicker/datepicker.css">
+    
+    <link href="assets/js/footable/css/footable.core.css?v=2-0-1" rel="stylesheet" type="text/css" />
+    <link href="assets/js/footable/css/footable.standalone.css" rel="stylesheet" type="text/css" />
+    <link href="assets/js/footable/css/footable-demos.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="assets/js/dataTable/lib/jquery.dataTables/css/DT_bootstrap.css" />
+    <link rel="stylesheet" href="assets/js/dataTable/css/datatables.responsive.css" />
+
+	
+	
+    <style type="text/css">
+    canvas#canvas4 {
+        position: relative;
+        top: 20px;
+    }
+	body
+	{
+		background:#2C3E50 !important;
+	}
+	.menu-left-nest a.#skin-select
+	{
+		display:none !important;
+	}
+	
+    </style>
+
+
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- TOP NAVBAR -->
+    <nav role="navigation" class="navbar navbar-static-top">
+	
+        <div class="container-fluid">
+		            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+                    <span class="entypo-menu"></span>
+                </button>
+                
+
+                <div id="logo-mobile" class="visible-xs">
+                    <a href="/"><img src="assets/img/logo.svg" alt="PropertPlus"></a>
+                </div>
+				
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                
+                <div id="nt-title-container" class="navbar-left running-text visible-lg">
+                    <ul class="date-top">
+                        <li class="entypo-calendar" style="margin-right:5px"></li>
+                        <li id="Date"></li>
+
+
+                    </ul>
+
+                    <ul id="digital-clock" class="digital">
+                        <li class="entypo-clock" style="margin-right:5px"></li>
+                        <li class="hour"></li>
+                        <li>:</li>
+                        <li class="min"></li>
+                        <li>:</li>
+                        <li class="sec"></li>
+                        <li class="meridiem"></li>
+                    </ul>
+                    
+                </div>
+
+                <ul style="margin-right:0;" class="nav navbar-nav navbar-right">
+                    <li>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <!--<img alt="" class="admin-pic img-circle" src="http://api.randomuser.me/portraits/thumb/men/10.jpg">-->Hi, Admin <b class="caret"></b>
+                        </a>
+                        <ul style="margin-top:14px;" role="menu" class="dropdown-setting dropdown-menu">
+                            <li>
+                                <a href="myprofile.html">
+                                    <span class="entypo-user"></span>&#160;&#160;My Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="entypo-vcard"></span>&#160;&#160;Account Setting</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="entypo-lifebuoy"></span>&#160;&#160;Help</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="login.html">
+                                    <span class="entypo-logout"></span>&#160;&#160;Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+					<li class="dropdown">
+
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i style="font-size:20px;" class="icon-conversation"></i><div class="noft-red">23</div></a>
+						
+						</li>
+						<li>
+
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i style="font-size:19px;" class="icon-warning tooltitle"></i><div class="noft-green">5</div></a>
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<div class="line" style="border-top: 3px solid #FC0";>
+		</div>
+
+    <!-- /END OF TOP NAVBAR -->
+<div style="background:#F9F9F9;;">
+<div style="clear:both;"></div>
+    <!-- SIDE MENU -->
+    <div id="skin-select">
+	
+        <div id="logo">
+            <a href="/"><img src="assets/img/logo.svg" alt="PropertPlus"></a>
+        </div>
+
+        <a id="toggle">
+            <span class="entypo-popup"></span>
+			</a>
+        
+        
+
+
+
+        <div class="skin-part">
+            <div id="tree-wrap">
+                <div class="side-bar">
+				
+                    
+					
+					<ul class="topnav menu-left-nest">
+					
+                        <li>
+                            <a class="tooltip-tip ajax-load" href="index.html" title="Dave mattew!">
+                                <i class="icon-user"></i>
+                                <span>Welcome back,</br><strong>Admin!</strong></span>
+
+                            </a>
+
+                            
+                        </li>
+						</ul>
+					
+
+                    <ul class="topnav menu-left-nest">
+                        <li>
+                            <a href="#" style="border-left:0px solid!important;" class="title-menu-left">
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="tooltip-tip ajax-load" href="index2.html" title="Dashboard">
+                                <i class="icon-window"></i>
+                                <span>Dashboard</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="tooltip-tip ajax-load" href="#" title="Projects">
+                                <i class="icon-document-new"></i>
+                                <span>Projects</span>
+                                <div class="noft-blue">289</div>
+                            </a>
+							<ul>
+                                <li>
+                                    <a class="tooltip-tip2 ajax-load" href="add_project.html" title="Blank Page"><i class="icon-plus"></i><span>Add Project</span></a>
+                                </li>
+                                 <li>
+                                    <a class="tooltip-tip2 ajax-load" href="view_project.html" title="Profile Page"><i class="icon-media-record"></i><span>View Project</span></a>
+                                </li>
+								</ul>
+                        </li>
+
+                        <li>
+                            <a class="tooltip-tip ajax-load" href="#" title="Sources">
+                                <i class="icon-document"></i>
+                                <span>Sources</span>
+                                <div class="noft-blue" style="display: inline-block; float: none;">New</div>
+                            </a>
+							<ul>
+                                <li>
+                                    <a class="tooltip-tip2 ajax-load" href="add_source.html" title="Blank Page"><i class="icon-plus"></i><span>Add source</span></a>
+                                </li>
+                                 <li>
+                                    <a class="tooltip-tip2 ajax-load" href="view_source.html" title="Blank Page"><i class="icon-media-record"></i><span>View Source</span></a>
+                                </li>
+								</ul>
+                        </li>
+
+                        <li>
+                            <a class="tooltip-tip" href="#" title="Users">
+                                <i class="icon-user-group"></i>
+                                <span>Users</span>
+                            </a>
+							<ul>
+                                <li>
+                                    <a class="tooltip-tip2 ajax-load" href="add_user.html" title="Blank Page"><i class="icon-user"></i><span>Add User</span></a>
+                                </li>
+								<li>
+                                    <a class="tooltip-tip2 ajax-load" href="view_user.html" title="Blank Page"><i class="icon-media-record"></i></i><span>View User</span></a>
+                                </li>
+							</ul>
+                            
+                        </li>
+                     
+						<li>
+                            <a class="tooltip-tip " href="#" title="Reports">
+                                <i class="icon-graph-pie"></i>
+                                <span>Reports</span>
+                            </a>
+                        </li>
+
+						<li>
+                            <a class="tooltip-tip " href="login.html" title="Settings">
+                                <i class="icon-gear"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                   
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF SIDE MENU -->
+
+
+
+    <!--  PAPER WRAP -->
+    <div class="wrap-fluid">
+        <div class="container-fluid paper-wrap bevel tlbr">
+
+
+
+
+
+            <!-- CONTENT -->
+            <!--TITLE -->
+            <div class="row">
+                <div id="paper-top">
+                    <div class="col-sm-3">
+                        <h2 class="tittle-content-header">
+                            <i class="icon-view-thumb"></i> 
+                            <span>Project Data
+                            </span>
+                        </h2>
+
+                    </div>
+
+                    <div class="col-sm-7">
+                        <div class="devider-vertical visible-lg"></div>
+                        
+						
+						
+                    </div>
+                    <div class="col-sm-2">
+                        <!--<div class="devider-vertical visible-lg"></div>-->
+                        <div class="btn-group btn-wigdet pull-right visible-lg">
+                            <div class="btn">
+                                Add</div>
+                            <button data-toggle="dropdown" class="btn dropdown-toggle" type="button">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul role="menu" class="dropdown-menu">
+                                <li>
+                                    <a href="add_project.html">
+                                        <span class="entypo-plus-circled margin-iconic"></span>Project</a>
+                                </li>
+                                <li>
+                                    <a href="add_source.html">
+                                        <span class="entypo-plus-circled margin-iconic"></span>Source</a>
+                                </li>
+                                <li>
+									<a href="#">
+                                    <span class="entypo-plus-circled margin-iconic"></span>Reports</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--/ TITLE -->
+
+            <!-- BREADCRUMB -->
+            <ul id="breadcrumb">
+                <li>
+                    <span class="entypo-home"></span>
+                </li>
+                <li><i class="fa fa-lg fa-angle-right"></i>
+                </li>
+                <li><a href="index.html" title="Sample page 1">Home</a>
+                </li>
+                <li><i class="fa fa-lg fa-angle-right"></i>
+                </li>
+                <li><a href="projectdata.html" title="Sample page 1">Project Details</a>
+                </li>
+                <li class="pull-right">
+                    <div class="input-group input-widget">
+						
+                        <input type="text" class="form-control" id="dp1" value="22-06-2014">
+                    </div>
+                </li>
+            </ul>
+
+            <!-- END OF BREADCRUMB -->
+
+
+
+
+
+
+            <!--<div id="paper-middle">
+                <div id="mapContainer"></div>
+            </div>-->
+
+            <!--  Top sections -->
+            <div class="content-wrap">
+                <div class="row">
+				<div class="col-sm-12">
+					<div class="alert alert-info">
+                                    
+                                    <!--<span class="entypo-info-circled"></span>
+                                    <strong>Project Name</strong>&nbsp;&nbsp;Irama Wangsa.-->
+									<p class="lead">Project Details</p>
+									<div class="table-responsive">
+                                    <table class="table">
+                                        <tbody><tr>
+                                            <th style="width:50%">Project Name:</th>
+                                            <td>Irama Wangsa<td></tr>
+											<tr>
+											<th style="width:50%">Project Type:</th>
+                                            <td>Exhibition<td></tr>
+											<tr>
+											<th style="width:50%">Company:</th>
+                                            <td>Beneton Properties<td></tr>
+											<tr>
+											<th style="width:50%">End Date:</th>
+                                            <td>12.01.2015<td>
+											</tr>
+											<tr>
+											<th style="width:50%">Master Client:</th>
+                                            <td>Jack Owens<td>
+											</tr>
+											<tr>
+											<th style="width:50%">Contact:</th>
+                                            <td>60-1234567890<td>
+											
+                                        </tr>
+										</tbody></table>
+										</div>
+                                </div>
+								</div>
+					<!--   Barchart -->
+					<div class="table-responsive">
+					
+					
+                    <div class="col-lg-6">
+					
+                        <div class="nest" id="lineClose">
+                            <div class="title-alt">
+                                <h6>
+                                    Transaction Count</h6>
+                                
+                            </div>
+
+                            <div class="body-nest" id="line">
+
+                                <canvas style="width: 500px; height: 216px;" id="canvas4" class="myChart" height="216" width="500"></canvas>
+
+                            </div>
+
+                        </div>
+						
+                    </div>
+					</div>
+					<div class="table-responsive">
+					
+					
+                    <div class="col-lg-6">
+					
+                        <div class="nest" id="lineClose">
+                            <div class="title-alt">
+                                <h6>
+                                    Source Transactions</h6>
+                                
+                            </div>
+
+                            <div class="body-nest" id="line">
+																
+																	<ul class="pie">
+																	<div style="float:right;">
+									<li class="visualize" data-value="200">Star Property Expo:</li>
+									<li class="visualize" data-value="300">Mstar</li>
+									<li class="visualize" data-value="112">Star online</li>
+									<li class="visualize" data-value="312">Propwall</li>
+									</div>
+									</ul>
+
+                            </div>
+
+                        </div>
+						
+                    </div>
+					</div>
+					<!--  / Barchart -->
+                </div>
+            </div>
+            <!--  / Top sections -->
+			
+			
+			<div class="content-wrap">
+                <div class="row">
+
+
+                    <div class="col-sm-12">
+
+                    
+
+                        <div class="nest" id="FootableClose">
+                            <div class="title-alt">
+                                <h6>
+                                    Source List</h6>
+                                <div class="titleClose">
+                                    <a class="gone" href="#FootableClose">
+                                        <!--<span class="entypo-cancel"></span>-->
+
+                                    </a>
+									<div class="btn-group btn-wigdet pull-right visible-lg">
+                            <button type="button" class="btn btn-success">
+                                    <span class="entypo-sweden"></span>&nbsp;&nbsp;Export</button>
+                            <button type="button" class="btn btn-info">
+                                    <span class="entypo-plus"></span>&nbsp;&nbsp;Add Entry</button>
+                            
+                        </div>
+						
+						
+									
+                                </div>
+                                <div class="titleToggle">
+                                    <a class="nav-toggle-alt" href="#Footable">
+                                        <!--<span class="entypo-up-open"></span>-->
+                                    </a>
+									<div class="status">
+                                        <select class="filter-status form-control">
+											<option value="active">Source</option>
+                                            <option value="active">Mobile site</option>
+                                            <option value="suspended">Microsite</option>
+											<option value="suspended">Web Portal</option>
+											<option value="suspended">Mobile App</option>
+                                        </select>
+                                    </div>
+                                </div>
+								<div class="titleToggle">
+                                    <a class="nav-toggle-alt" href="#Footable">
+                                        <!--<span class="entypo-up-open"></span>-->
+                                    </a>
+									<div class="status">
+                                        <select class="filter-status form-control">
+                                            <option value="active">State</option>
+                                            <option value="suspended">Shah Alam</option>
+											<option value="suspended">Sarawak</option>
+											<option value="suspended">Sabah</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="body-nest" id="Footable">
+
+                                
+                                <table class="table-striped footable-res footable metro-blue" data-page-size="6">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Name
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                Email
+                                            </th>
+											<th>
+												Mobile
+											</th>
+                                            
+                                            <th data-hide="phone,tablet">
+                                                 Address
+                                            </th>
+                                            <th data-hide="phone,tablet">
+                                                City
+                                            </th>
+											<th data-hide="phone,tablet">
+                                                State
+                                            </th>
+											<th>
+												Source
+											</th>
+											<th>
+												 Date
+											</th>											
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="trans_detail.html">Finn</td>
+											<td>finn@beneton.com</td>
+											<td>60-1234567890</td>
+                                            <td>No.23, Sunview Condo, GST Street</td>
+											<td>Selengor</td>
+											<td>shah Alam</td>
+                                            <td>Mobile App</td>
+                                            <td data-value="78025368997">22 Jun 2014</td>
+                                         </tr>
+										<tr>
+                                            <td><a href="#">Philip</td>
+											<td>philip@markgrops.com</td>
+											<td>60-0987654321</td>
+                                            <td>Suite-17 Highlanders, Bay Street, </td>
+											<td>Pulau Pinang</td>
+											<td>George Town</td>
+                                            <td>Web Portal</td>
+                                            <td data-value="78025368997">22 Jun 2014</td>
+                                         </tr> 
+										<tr>
+                                            <td><a href="#">Mark</td>
+											<td>mark@star.com</td>
+											<td>60-4578693258</td>
+                                            <td>123 Mexi Condo, Java street</td>
+											<td>Sabah</td>
+											<td>Kota</td>
+                                            <td>Mobile App</td>
+                                            <td data-value="78025368997">12 Jul 2014</td>
+                                         </tr>
+										<tr>
+                                            <td><a href="#">Martin</td>
+											<td>martin@hillview.com</td>
+											<td>60-7639874263</td>
+                                            <td>No.14 Tower Resort</td>
+											<td>Sarawak</td>
+											<td>Kuching</td>
+                                            <td>Microsite</td>
+                                            <td data-value="78025368997">06 Aug 2014</td>
+                                         </tr>
+										<tr>
+                                            <td><a href="#">Jessie</td>
+											<td>jess@star.com</td>
+											<td>60-8875368925</td>
+                                            <td>Phase-2, Mark condo, GST Roads</td>
+											<td>Selengor</td>
+											<td>Shah Alam</td>
+                                            <td>Web Portal</td>
+                                            <td data-value="78025368997">02 Aug 2014</td>
+                                         </tr>
+										<tr>
+                                            <td><a href="#">Sam Peter</td>
+											<td>sam@star.com</td>
+											<td>60-4489637890</td>
+                                            <td>128 Mexi Condo, Java street</td>
+											<td>Sabah</td>
+											<td>Kota</td>
+                                            <td>Mobile App</td>
+                                            <td data-value="78025368997">26 Sep 2014</td>
+                                         </tr>
+											<tr>
+                                            <td><a href="#">Finn</td>
+											<td>finn@markgroups.com</td>
+											<td>60-1234567890</td>
+                                            <td>No.23, Sunview Condo, GST Street</td>
+											<td>Selengor</td>
+											<td>shah Alam</td>
+                                            <td>Mobile App</td>
+                                            <td data-value="78025368997">12 Oct 2014</td>
+                                         </tr>
+										 
+										 
+										 
+										 
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="7">
+                                                <div class="pagination pagination-centered">
+</div>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+								
+								
+								
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+			
+			
+
+       
+                <div class="row">
+                                                               <div id="placeholder" style="width:100%;height:1px;"></div>
+                            
+                          
+                            
+
+                    </div>
+                   
+                
+        
+				
+				
+                <!-- /END OF CONTENT -->
+
+
+
+                <!-- FOOTER -->
+                <div class="footer-space"></div>
+                <div id="footer">
+                    <div class="devider-footer-left"></div>
+                    <div class="time">
+                        <p id="spanDate"></p>
+                        <p id="clock"></p>
+                    </div>
+                    <div class="copyright">PropertyPlus
+                        -2014 <a href="http://propertyplus.com.my">StarCRM</a> All Rights Reserved</div>
+					<div class="changelog">Changelog
+                        <a href="http://propertyplus.com.my">Ver.0.1</a></div>
+                    <!--<div class="devider-footer"></div>-->
+
+
+                </div></div>
+                <!-- / END OF FOOTER -->
+
+</div>
+            </div>
+        </div>
+    </div>
+    <!--  END OF PAPER WRAP -->
+</div>
+    <!-- RIGHT SLIDER CONTENT -->
+    <div class="sb-slidebar sb-right">
+	
+	     
+            
+
+        <div style="margin-top:0;" class="right-wrapper">
+            <div class="row">
+                
+                
+        </div>
+    </div>
+
+    <!-- END OF RIGHT SLIDER CONTENT-->
+    
+    <!-- MAIN EFFECT -->
+    <script type="text/javascript" src="assets/js/preloader.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/load.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+	
+	<!-- /MAIN EFFECT -->
+	<script type="text/javascript" src="assets/js/datepicker/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="assets/js/datepicker/clockface.js"></script>
+    <script type="text/javascript" src="assets/js/datepicker/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="assets/js/chart/chart.js"></script>
+    <script type="text/javascript" src="assets/js/chart/barChart.js"></script>
+	 <script type="text/javascript" src="assets/js/chart/lineChart.js"></script>
+	 <script type="text/javascript" src="assets/js/chart/visualize.js"></script>
+	
+	
+	
+	<script>
+$(document).ready(function() {
+$('.pie').visualize({
+width: 200,
+height: 200,
+type: 'pie', // pie or chart
+legend: true
+});
+});
+</script>
+
+	<!-- / Chart -->
+	    
+    <!-- Footable -->
+    <script type="text/javascript" src="assets/js/toggle_close.js"></script>
+    <script src="assets/js/footable/js/footable.js?v=2-0-1" type="text/javascript"></script>
+    <script src="assets/js/footable/js/footable.sort.js?v=2-0-1" type="text/javascript"></script>
+    <script src="assets/js/footable/js/footable.filter.js?v=2-0-1" type="text/javascript"></script>
+    <script src="assets/js/footable/js/footable.paginate.js?v=2-0-1" type="text/javascript"></script>
+    <script src="assets/js/footable/js/footable.paginate.js?v=2-0-1" type="text/javascript"></script>
+
+	<script type="text/javascript">
+    $('#datetimepicker1').datetimepicker({
+        language: 'pt-BR'
+    });
+    $('#dp1').datepicker()
+    $('#dpYears').datepicker();
+    $('#timepicker1').timepicker();
+    $('#t1').clockface();
+    $('#t2').clockface({
+        format: 'HH:mm',
+        trigger: 'manual'
+    });
+
+    $('#toggle-btn').click(function(e) {
+        e.stopPropagation();
+        $('#t2').clockface('toggle');
+    });
+</script>
+
+
+    <script type="text/javascript">
+    $(function() {
+        $('.footable-res').footable();
+    });
+    </script>
+    <script type="text/javascript">
+    $(function() {
+        $('#footable-res2').footable().bind('footable_filtering', function(e) {
+            var selected = $('.filter-status').find(':selected').text();
+            if (selected && selected.length > 0) {
+                e.filter += (e.filter && e.filter.length > 0) ? ' ' + selected : selected;
+                e.clear = !e.filter;
+            }
+        });
+
+        $('.clear-filter').click(function(e) {
+            e.preventDefault();
+            $('.filter-status').val('');
+            $('table.demo').trigger('footable_clear_filter');
+        });
+
+        $('.filter-status').change(function(e) {
+            e.preventDefault();
+            $('table.demo').trigger('footable_filter', {
+                filter: $('#filter').val()
+            });
+        });
+
+        $('.filter-api').click(function(e) {
+            e.preventDefault();
+
+            //get the footable filter object
+            var footableFilter = $('table').data('footable-filter');
+
+            alert('about to filter table by "tech"');
+            //filter by 'tech'
+            footableFilter.filter('tech');
+
+            //clear the filter
+            if (confirm('clear filter now?')) {
+                footableFilter.clearFilter();
+            }
+        });
+    });
+    </script>
+
+
+
+
+    <!-- / Footable -->
+
+
+    
+
+
+
+    <script src="assets/js/jhere-custom.js"></script>
+
+    
+
+
+    <script type="text/javascript">
+    /* Javascript
+     *
+     * See http://jhere.net/docs.html for full documentation
+     */
+    $(window).on('load', function() {
+        $('#mapContainer').jHERE({
+            center: [52.500556, 13.398889],
+            type: 'smart',
+            zoom: 10
+        }).jHERE('marker', [52.500556, 13.338889], {
+            icon: 'assets/img/marker.png',
+            anchor: {
+                x: 12,
+                y: 32
+            },
+            click: function() {
+                alert('Hallo from Berlin!');
+            }
+        })
+            .jHERE('route', [52.711, 13.011], [52.514, 13.453], {
+                color: '#FFA200',
+                marker: {
+                    fill: '#86c440',
+                    text: '#'
+                }
+            });
+    });
+    </script>
+    
+    
+	
+
+
+
+
+</body>
+
+</html>

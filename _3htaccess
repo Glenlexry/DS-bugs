@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !maintenance\.html
+RewriteCond %{REQUEST_FILENAME} !(styles|images).+$
+RewriteCond %{REQUEST_URI} !\.(jpe?g?|png|gif|css|woff|ttf) [NC]
+RewriteRule ^(.*)$ http://digitalsymphony.it/maintenance/maintenance.html [R=307,L]

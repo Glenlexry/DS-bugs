@@ -1,0 +1,380 @@
+<div class="content-wrap">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="profit" id="profitClose">
+                            <div class="headline ">
+                                <h3>
+                                    <span>
+                                        <!--<i class="maki-ferry"></i>-->&#160;&#160;Projects</span>
+                                </h3>
+                                <div class="titleClose">
+                                    <a href="#profitClose" class="gone">
+                                        <!--<span class="entypo-cancel"></span>-->
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="value">
+                                <span class="pull-left"><i class="entypo-doc-text doc-text-position"></i>
+                                </span>
+								
+                                
+                                </span>45<b>Added</b>
+
+                            
+                                <!--<div id="getting-started">
+                                    <span>%M</span>
+
+                                    <span>%S</span>
+                                </div>-->
+
+
+                            </div>
+
+                            <!--<div class="progress-tinny">
+                                <div style="width: 50%" class="bar"></div>
+                            </div>
+                            <div class="profit-line">
+                                <i class="fa fa-caret-up fa-lg"></i>&#160;&#160; 50% &#160;From Last Hour</div>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <!--<div class="revenue" id="revenueClose">-->
+						<div class="profit1" id="profitClose">
+                            <div class="headline ">
+
+                                <h3>
+                                    <span>
+                                        <!--<i class="maki-post"></i>-->&#160;&#160;Interactions</span>
+                                </h3>
+
+                                <div class="titleClose">
+                                    <a href="#revenueClose" class="gone">
+                                        <!--<span class="entypo-cancel"></span>-->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="value">
+                                <span class="pull-left"><i class="entypo-sound sound-position"></i>
+                                </span>
+                                
+								<!--<canvas id="canvas4" width="70" height="70"></canvas>
+                                <i class="pull-right">/L</i>-->
+								</span>23<b>Interacted</b>
+								
+                            </div>
+
+                            <!--<div class="progress-tinny">
+                                <div style="width: 25%" class="bar"></div>
+                            </div>
+                            <div class="profit-line">
+                                <i class="fa fa-caret-down fa-lg"></i>&#160;&#160;Rate : 20 km/Hour</div>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="order" id="orderClose">
+                            <div class="headline ">
+                                <h3>
+                                    <span>
+                                        <!--<i class="maki-airport"></i>-->&#160;&#160;Users</span>
+                                </h3>
+                                <div class="titleClose">
+                                    <a href="#orderClose" class="gone">
+                                        <!--<span class="entypo-cancel"></span>-->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="value">
+                                <span><i class="fa fa-user fa-2x"></i>
+                                </span><b id="speed"></b><b>Active</b>
+
+                            </div>
+
+                            <!--<div class="progress-tinny">
+                                <div style="width: 10%" class="bar"></div>
+                            </div>
+                            <div class="profit-line">
+                                <i class="fa fa-caret-down fa-lg"></i>&#160;&#160;Rate : 20 Plane/Hour</div>-->
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class=" member" id="memberClose">
+                            <div class="headline ">
+                                <h3>
+                                    <span>
+                                        <!--<i class="fa fa-truck"></i>-->
+                                        &#160;&#160;Sources
+                                    </span>
+                                </h3>
+                                <div class="titleClose">
+                                    <a href="#memberClose" class="gone">
+                                        <span class="entypo-cancel"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="value">
+                                <span><i class="maki-warehouse"></i>
+                                </span>20<b>Received</b>
+
+                            </div>
+                            <!--<div class="progress-tinny">
+                                <div style="width: 50%" class="bar"></div>
+                            </div>
+                            <div class="profit-line">
+                                <span class="entypo-down-circled"></span>&#160;50% From Last Month</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  / DEVICE MANAGER -->
+			
+			
+			<div class="content-wrap">
+                <div class="row">
+
+
+                    <div class="col-sm-12">
+
+                    
+
+                        <div class="nest" id="FootableClose">
+                            <div class="title-alt">
+                                <h6>
+                                    Recent Projects</h6>
+                                <div class="titleClose">
+                                    <a class="gone" href="#FootableClose">
+                                        <!--<span class="entypo-cancel"></span>-->
+
+													
+
+                                    </a>
+									<div class="btn-group btn-wigdet pull-right visible-lg">
+                            
+                            <button type="button" class="btn btn-default">
+                                    <span class="entypo-layout"></span>&nbsp;&nbsp;Toggle</button>
+                            
+                        </div>
+                                </div>
+                                <div class="titleToggle">
+                                    <a class="nav-toggle-alt" href="#Footable">
+                                        <!--<span class="entypo-up-open"></span>-->
+                                    </a>
+									<div class="status">
+                                        <select class="filter-status form-control">
+                                            <option value="active">Active</option>
+                                            <option value="suspended">Archived</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="body-nest" id="Footable">
+
+                                
+                                <table class="table-striped footable-res footable metro-blue" data-page-size="6">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Project Name
+                                            </th>
+                                            <th>
+                                                Company
+                                            </th>
+											<th>
+												Transactions
+											</th>
+                                            
+                                            <th>
+                                                Created Date
+                                            </th>
+                                            <th>
+                                                Status
+                                            </th>
+											<th>
+												Tool
+											</th>	
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Irama Wangsa</td>
+                                            <td><a href="#">Beneton Properties</a>
+                                            </td>
+                                            <td>16</td>
+                                            <td data-value="78025368997">22 Jun 2014</td>
+                                            <td data-value="1">
+                                                <span class="status-metro status-active" title="Active">Active</span>
+                                            </td>
+											<td>
+											
+									<button type="button" class="btn btn-View">
+                                    <span class="entypo-docs"></span></button>
+									<button type="button" class="btn btn-editor">
+                                    <span class="entypo-tools"></span></button>
+									<button type="button" class="btn btn-trash">
+                                    <span class="entypo-trash"></span></button>
+
+									</td>
+										  </tr>
+                                        <tr>
+                                            <td>Liberty Tower</td>
+                                            
+                                            <td><a href="#">Icity Propertis</a>
+                                            </td>
+											<td>23</td>
+                                            <td data-value="370961043292">3 Oct 2014</td>
+                                            <td data-value="2">
+                                                <span class="status-metro status-active" title="Active">Active</span>
+                                            </td>
+											<td>
+											
+									<button type="button" class="btn btn-View">
+                                    <span class="entypo-docs"></span></button>
+									<button type="button" class="btn btn-editor">
+                                    <span class="entypo-tools"></span></button>
+									<button type="button" class="btn btn-trash">
+                                    <span class="entypo-trash"></span></button>
+
+									</td>
+                                        </tr>
+                                        <tr>
+                                            <td>28 Boulevard</td>
+                                            
+                                            <td><a href="#">Beverly Groups</a></td>
+											<td>12</td>
+                                            <td data-value="-22133780420">19 Oct 2014</td>
+                                            <td data-value="3">
+                                                <span class="status-metro status-disabled" title="Disabled">Archived</span>
+                                            </td>
+											<td>
+											
+									<button type="button" class="btn btn-View">
+                                    <span class="entypo-docs"></span></button>
+									<button type="button" class="btn btn-editor">
+                                    <span class="entypo-tools"></span></button>
+									<button type="button" class="btn btn-trash">
+                                    <span class="entypo-trash"></span></button>
+
+									</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Iskandaria</td>
+											<td><a href="#">Beverly Groups</a></td>
+											<td>10</td>                                         
+                                            <td data-value="250833505574">20 Oct 2014</td>
+                                            <td data-value="1">
+                                                <span class="status-metro status-active" title="Active">Active</span>
+                                            </td>
+											<td>
+											
+									<button type="button" class="btn btn-View">
+                                    <span class="entypo-docs"></span></button>
+									<button type="button" class="btn btn-editor">
+                                    <span class="entypo-tools"></span></button>
+									<button type="button" class="btn btn-trash">
+                                    <span class="entypo-trash"></span></button>
+
+									</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Cyber Valley</td>
+                                            <td><a href="#">Icity Properties</a></td>
+                                            <td>22</td>
+                                            <td data-value="437400551390">11 Nov 1983</td>
+                                            <td data-value="2">
+                                                <span class="status-metro status-disabled" title="Disabled">Archived</span>
+                                            </td>
+											<td>
+											
+									<button type="button" class="btn btn-View">
+                                    <span class="entypo-docs"></span></button>
+									<button type="button" class="btn btn-editor">
+                                    <span class="entypo-tools"></span></button>
+									<button type="button" class="btn btn-trash">
+                                    <span class="entypo-trash"></span></button>
+
+									</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lizzee</td>
+                                            <td><a href="#">Mark Groups</a>
+                                            </td>
+                                            <td>18</td>
+                                            <td data-value="-257733999319">1 Nov 1961</td>
+                                            <td data-value="3">
+                                                <span class="status-metro status-active" title="Active">Active</span>
+                                            </td>
+											<td>
+											
+									<button type="button" class="btn btn-View">
+                                    <span class="entypo-docs"></span></button>
+									<button type="button" class="btn btn-editor">
+                                    <span class="entypo-tools"></span></button>
+									<button type="button" class="btn btn-trash">
+                                    <span class="entypo-trash"></span></button>
+
+									</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Judi</td>
+                                            <td>Badgett</td>
+                                            <td>Electrical Lineworker</td>
+                                            <td data-value="362134712000">23 Jun 1981</td>
+                                            <td data-value="1">
+                                                <span class="status-metro status-active" title="Active">Active</span>
+                                            </td>
+											<td>
+											
+									<button type="button" class="btn btn-View">
+                                    <span class="entypo-docs"></span></button>
+									<button type="button" class="btn btn-editor">
+                                    <span class="entypo-tools"></span></button>
+									<button type="button" class="btn btn-trash">
+                                    <span class="entypo-trash"></span></button>
+
+									</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lauri</td>
+                                            <td>Hyland</td>
+                                            <td>Blackjack Supervisor</td>
+                                            <td data-value="500874333932">15 Nov 1985</td>
+                                            <td data-value="3">
+                                                <span class="status-metro status-active" title="Active">Active</span>
+                                            </td>
+											<td>
+											
+									<button type="button" class="btn btn-View">
+                                    <span class="entypo-docs"></span></button>
+									<button type="button" class="btn btn-editor">
+                                    <span class="entypo-tools"></span></button>
+									<button type="button" class="btn btn-trash">
+                                    <span class="entypo-trash"></span></button>
+
+									</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="5">
+                                                <div class="pagination pagination-centered">
+</div>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+								
+								
+								
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+			

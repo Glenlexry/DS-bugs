@@ -1,0 +1,3 @@
+[20-Dec-2017 02:14:52 UTC] PHP Warning:  mail(/var/log/phpmail.log): failed to open stream: Permission denied in /home/dsadmin/public_html/ajax/process.php on line 37
+[21-Dec-2017 08:26:01 UTC] PHP Warning:  mail(/var/log/phpmail.log): failed to open stream: Permission denied in /home/dsadmin/public_html/ajax/process.php on line 37
+[03-Jan-2018 08:42:29 UTC] PHP Warning:  mail(/var/log/phpmail.log): failed to open stream: Permission denied in /home/dsadmin/public_html/ajax/process.php on line 37
